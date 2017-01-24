@@ -7,7 +7,7 @@ print(' ____   __   _  _    ____  ____  __ _   __   _  _  ____  ____ ')
 print('(  _ \ /  \ / )( \  (  _ \(  __)(  ( \ / _\ ( \/ )(  __)(  _  )')
 print(' ) __/(  O )\ /\ /   )   / ) _) /    //    \/ \/ \ ) _)  )   /')
 print('(__)   \__/ (_/\_)  (__\_)(____)\_)__)\_/\_/\_)(_/(____)(__\_)')
-print(' v1.0 // Sid')
+print(' v1 // Sid')
 
 
 ep = input('\nWhats the Episode Number? ')
@@ -51,11 +51,11 @@ for fname in fnames:
         print('\nDolby M&E Created....')
         
 if count == 5:
-    print('\nAll done successfully!')
+    print('\n[*] All done successfully!')
     dup = glob.glob('/Users/Sid/Desktop/Renamer/enc/*.wav')
     for duplicates in dup:
         remove(duplicates)
 else:
-    print('\nSomething went wrong!')
+    print('\n[!] Something went wrong!')
         
 
