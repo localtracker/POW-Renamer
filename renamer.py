@@ -25,8 +25,8 @@ fnames = listdir('.')
 for fname in fnames:
     if fname.startswith(monomix):
         rename(fname, '01POW EP#'+str(ep)+' MONO MIX.wav')
-        shutil.copy2('/Users/Sid/Desktop/Renamer/01POW EP#'+str(ep)+' MONO MIX.wav','/Users/Sid/Desktop/Renamer/enc/02POW EP#'+str(ep)+' MONO MIX.wav')
-        shutil.copy2('/Users/Sid/Desktop/Renamer/enc/02POW EP#'+str(ep)+' MONO MIX.wav','/Users/Sid/Desktop/Renamer/02POW EP#'+str(ep)+' MONO MIX.wav')
+        shutil.copy2('/Users/Name/Desktop/Renamer/01POW EP#'+str(ep)+' MONO MIX.wav','/Users/Name/Desktop/Renamer/enc/02POW EP#'+str(ep)+' MONO MIX.wav')
+        shutil.copy2('/Users/Name/Desktop/Renamer/enc/02POW EP#'+str(ep)+' MONO MIX.wav','/Users/Name/Desktop/Renamer/02POW EP#'+str(ep)+' MONO MIX.wav')
         count = count + 1
         print('\nMono Mix Created....')
     elif fname.startswith(monomne):
@@ -39,20 +39,20 @@ for fname in fnames:
         print('\nMono Dia Created....')
     elif fname.startswith(dolbymix):
         rename(fname, '03POW EP#'+str(ep)+' DOLBY FULL MIX.wav')
-        shutil.copy2('/Users/Sid/Desktop/Renamer/03POW EP#'+str(ep)+' DOLBY FULL MIX.wav','/Users/Sid/Desktop/Renamer/enc/04POW EP#'+str(ep)+' DOLBY FULL MIX.wav')
-        shutil.copy2('/Users/Sid/Desktop/Renamer/enc/04POW EP#'+str(ep)+' DOLBY FULL MIX.wav','/Users/Sid/Desktop/Renamer/04POW EP#'+str(ep)+' DOLBY FULL MIX.wav')
+        shutil.copy2('/Users/Name/Desktop/Renamer/03POW EP#'+str(ep)+' DOLBY FULL MIX.wav','/Users/Name/Desktop/Renamer/enc/04POW EP#'+str(ep)+' DOLBY FULL MIX.wav')
+        shutil.copy2('/Users/Name/Desktop/Renamer/enc/04POW EP#'+str(ep)+' DOLBY FULL MIX.wav','/Users/Name/Desktop/Renamer/04POW EP#'+str(ep)+' DOLBY FULL MIX.wav')
         count = count + 1
         print('\nDolby Mix Created....')
     elif fname.startswith(dolbymne):
         rename(fname, '05POW EP#'+str(ep)+' DOLBY M&E.wav')
-        shutil.copy2('/Users/Sid/Desktop/Renamer/05POW EP#'+str(ep)+' DOLBY M&E.wav','/Users/Sid/Desktop/Renamer/enc/06POW EP#'+str(ep)+' DOLBY M&E.wav')
-        shutil.copy2('/Users/Sid/Desktop/Renamer/enc/06POW EP#'+str(ep)+' DOLBY M&E.wav','/Users/Sid/Desktop/Renamer/06POW EP#'+str(ep)+' DOLBY M&E.wav')
+        shutil.copy2('/Users/Name/Desktop/Renamer/05POW EP#'+str(ep)+' DOLBY M&E.wav','/Users/Name/Desktop/Renamer/enc/06POW EP#'+str(ep)+' DOLBY M&E.wav')
+        shutil.copy2('/Users/Name/Desktop/Renamer/enc/06POW EP#'+str(ep)+' DOLBY M&E.wav','/Users/Name/Desktop/Renamer/06POW EP#'+str(ep)+' DOLBY M&E.wav')
         count = count + 1
         print('\nDolby M&E Created....')
         
 if count == 5:
     print('\n[*] All done successfully!')
-    dup = glob.glob('/Users/Sid/Desktop/Renamer/enc/*.wav')
+    dup = glob.glob('/Users/Name/Desktop/Renamer/enc/*.wav')
     for duplicates in dup:
         remove(duplicates)
 else:
